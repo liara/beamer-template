@@ -3,9 +3,14 @@
 \usepackage[T1]{fontenc}
 \usepackage[english]{babel}
 \usepackage{graphicx}
+%\usepackage{bmpsize}
 \usepackage{caption}
 \usepackage{xcolor}
 \usepackage{hyperref}
+% Uncomment the lines bellow to use TileWallPaper
+\usepackage{wallpaper}
+
+
 % https://www.hartwork.org/beamer-theme-matrix/
 \usetheme{Warsaw}
 
@@ -48,6 +53,7 @@
 \renewcommand{\theFancyVerbLine}{\sffamily
     \textcolor[rgb]{0.5,0.5,1.0}{\scriptsize
     \oldstylenums{\arabic{FancyVerbLine}}}}
+
 % http://latexcolor.com/
 \definecolor{lightskyblue}{rgb}{0.53, 0.81, 0.98}
 
@@ -68,7 +74,7 @@
 \title{Sample title}
 \author{Anonymous}
 \institute{Faculty of Physics\\
-  Very Famous University}
+  Some University}
 \date{\today}
 
 \begin{document}
@@ -179,6 +185,14 @@ layout in some cases.
 }
 }
 
+{
+\usebackgroundtemplate{\ThisTileWallPaper{95.3pt}{95.3pt}{dark_brick_wall.png}}    
+\frame{
+\frametitle{Tiling Background}
+Text here
+}
+}
+
 \begin{frame}
 \frametitle{Sample equation}
 \begin{gather}\label{eq:1}
@@ -204,7 +218,7 @@ Email: \href{mailto:some@example.com}{\tt some@example.com}
 
 \column{0.5\textwidth}
 \begin{figure}[ht]
-    \includegraphics[width=0.5\textwidth]{insect.png}
+    \includegraphics[width=0.4\textwidth]{insect.png}
     \caption{\href{https://twitter.com/Pixel_Dailies}{Pixel Dailies}}
 \end{figure}
 \end{columns}

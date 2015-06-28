@@ -1,6 +1,6 @@
 # A beamer template
 
-Including Mint syntax highlighting, hyperref, background image and some other features.
+Including Mint syntax highlighting, Hyperref, background image and some other features.
 
 ### Dependencies:
 
